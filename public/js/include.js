@@ -4,8 +4,15 @@
     $('.nav .dropdown').hover(function () {
         $(this).find('> .dropdown-menu').slideDown(200);
 
+
     }, function () {
         $(this).find('> .dropdown-menu').fadeOut(200);
+    });
+
+
+
+    $('.nav > li.dropdown').on('click', function(e) {
+    $(this).toggleClass('open');
     });
 
     // RESPONSIVE NAVIGATION
@@ -17,6 +24,18 @@
             }
         });
     });
+
+
+
+    $(function () {
+        $('.wpml-lang-dropdown').dlmenu({
+            animationClasses: {
+                classin: 'dl-animate-in-2',
+                classout: 'dl-animate-out-2'
+            }
+        });
+    });
+
 
 
     // SEARCH ANIMATION
@@ -33,7 +52,7 @@
 
     if (!is_touch_device()) {
 
-        
+
 
         function set_static_header(position) {
             var header_height = $(".header-wrapper.header-transparent").height();
@@ -65,7 +84,7 @@
                 $('.header-wrapper.style03').css('top', 0);
             }
         }
-		
+
 		(function () {
             var window_y = $(document).scrollTop();
             if (window_y > 0) {
@@ -128,7 +147,7 @@
     })();
 
 
-    // SCROLL TO TOP 
+    // SCROLL TO TOP
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('.scroll-up').fadeIn();
@@ -212,7 +231,7 @@
     // Placeholder fix for old browsers
     $('input, textarea').placeholder();
 
-    // services gallery button positioning 
+    // services gallery button positioning
     var service_button_width = $('.hover-details').width() / 2;
     $('.hover-details').css('margin-left', -service_button_width);
 
@@ -247,7 +266,7 @@
         }, 'xml');
 
     });
-    
+
     /*
      * SVG COLOR CHANGING
      */
@@ -280,7 +299,3 @@
 
     });
 });
-
-
-
-

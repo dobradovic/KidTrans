@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kid Trans</title>
+    <meta name="description" content="KID TRANS pruza usluge iz oblasti transporta i kompletne organizacije dopreme robe kombinacijom svih vidova transporta, odnosno logistike.">
+    <meta name="keywords" content="KIDTRANS,transport, drumski, prevoz, robe, organizacija, logistika, kamionski,tandem, kamioni, usluge, carinjenje, skladistenje,tandem,kamioni, pouzdan">
+    <title>KID TRANS</title>
 
 
     <link href="{{ asset('/css/bootstrap.css') }}" rel="stylesheet"/>
@@ -18,12 +20,15 @@
     <link href="{{ asset('/css/responsive.css') }}" rel="stylesheet"/>
 
 
+
     <!-- Google Web fonts -->
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,800,700,600' rel='stylesheet' type='text/css'>
 
     <!-- Font icons -->
     <link rel="stylesheet" href="icon-fonts/font-awesome-4.3.0/css/font-awesome.min.css"/><!-- Fontawesome icons css -->
+    <link rel="shortcut icon" href="{{ asset('/img/favicon.ico')}}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('/img/favicon.ico')}}" type="image/x-icon">
     <!-- Bootstrap -->
 
 <!-- Font icons -->

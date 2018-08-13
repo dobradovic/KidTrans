@@ -80,6 +80,8 @@ return [
 
     'locale' => 'en',
 
+
+
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale
@@ -164,7 +166,9 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
-        
+      
+
+
 
         /*
          * Package Service Providers...

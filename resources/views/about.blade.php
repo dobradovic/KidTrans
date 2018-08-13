@@ -9,7 +9,7 @@
       <div class="container">
           <div class="row">
               <div class="col-md-12">
-                  <h1>O nama</h1>
+                  <h1>@lang('onama.naslov')</h1>
 
 
               </div><!-- .col-md-12 end -->
@@ -42,7 +42,7 @@ Pored svog voznog parka, kompanija KiD Trans Trade se može pohvaliti veoma razv
               </div><!-- .col-md-6 end -->
 
               <div class="col-md-6 animated triggerAnimation" data-animate="zoomIn">
-                  <img src="img/svg/pi-warehouse-1.svg" alt=""/>
+                  <img src="img/svg/pi-warehouse-1.svg" alt="" width="400px"/>
               </div><!-- .col-md-6 end -->
           </div><!-- .row end -->
       </div><!-- .container end -->
@@ -57,16 +57,7 @@ Pored svog voznog parka, kompanija KiD Trans Trade se može pohvaliti veoma razv
                   </div><!-- .custom-heading end -->
 
                   <p>
-                      A wonderful serenity has taken possession of my
-                      entire soul, like these sweet mornings of spring
-                      which I enjoy with my whole heart. I am alone, and
-                      feel the charm of existence in this spot, which was
-                      created for the bliss of souls like mine. I am so
-                      happy, my dear friend, so absorbed in the exquisite
-                      sense of mere tranquil existence, that I neglect my
-                      talents. I should be incapable of drawing a single
-                      stroke at the present moment; and yet I feel that I
-                      never was a greater artist than now.
+                  Nasa misija...ovde ide tekst
                   </p>
               </div><!-- .col-md-6 end -->
 
@@ -78,32 +69,38 @@ Pored svog voznog parka, kompanija KiD Trans Trade se može pohvaliti veoma razv
                   <ul class="fa-ul">
                       <li>
                           <i class="fa fa-li fa-long-arrow-right"></i>
-                          Providing high quality transportation services to all of our clients
+                          {{-- Providing high quality transportation services to all of our clients --}}
+                          text...
                       </li>
 
                       <li>
                           <i class="fa fa-li fa-long-arrow-right"></i>
-                          Invest in our employees to provide better service and company growth
+                          {{-- Invest in our employees to provide better service and company growth --}}
+                            text...
                       </li>
 
                       <li>
                           <i class="fa fa-li fa-long-arrow-right"></i>
-                          Worry about enviroment according to latest industry standards
+                          {{-- Worry about enviroment according to latest industry standards --}}
+                            text...
                       </li>
 
                       <li>
                           <i class="fa fa-li fa-long-arrow-right"></i>
-                          Safety as top priority in assuring safe work procedures
+                          {{-- Safety as top priority in assuring safe work procedures --}}
+                            text...
                       </li>
 
                       <li>
                           <i class="fa fa-li fa-long-arrow-right"></i>
-                          Investing in technology to provide fast, acurate and cost-effective service
+                          {{-- Investing in technology to provide fast, acurate and cost-effective service --}}
+                            text...
                       </li>
 
                       <li>
                           <i class="fa fa-li fa-long-arrow-right"></i>
-                          Living up to highest industry standards
+                          {{-- Living up to highest industry standards --}}
+                            text...
                       </li>
                   </ul><!-- .fa-ul end -->
               </div><!-- .col-md-6 end -->
@@ -129,11 +126,7 @@ Pored svog voznog parka, kompanija KiD Trans Trade se može pohvaliti veoma razv
 
                       <h4>Always learning</h4>
 
-                      <p>
-                          Cozy sphinx waves quart jug of bad milk. A
-                          very bad quack might jinx zippy fowls. Few
-                          quips galvanized the mock jury box.
-                      </p>
+
                   </div><!-- .service-icon-center end -->
               </div><!-- .col-md-3 end -->
 
@@ -145,11 +138,7 @@ Pored svog voznog parka, kompanija KiD Trans Trade se može pohvaliti veoma razv
 
                       <h4>Latest Technology</h4>
 
-                      <p>
-                          Cozy sphinx waves quart jug of bad milk. A
-                          very bad quack might jinx zippy fowls. Few
-                          quips galvanized the mock jury box.
-                      </p>
+
                   </div><!-- .service-icon-center end -->
               </div><!-- .col-md-3 end -->
 
@@ -161,27 +150,19 @@ Pored svog voznog parka, kompanija KiD Trans Trade se može pohvaliti veoma razv
 
                       <h4>Safety & Quality</h4>
 
-                      <p>
-                          Cozy sphinx waves quart jug of bad milk. A
-                          very bad quack might jinx zippy fowls. Few
-                          quips galvanized the mock jury box.
-                      </p>
+
                   </div><!-- .service-icon-center end -->
               </div><!-- .col-md-3 end -->
 
               <div class="col-md-3 col-sm-6">
                   <div class="service-icon-center">
                       <div class="icon-container">
-                          <i class="fa fa-tree"></i>
+                          <i class="fa fa-users"></i>
                       </div>
 
-                      <h4>Care for Environment</h4>
+                      <h4>Care for our clients</h4>
 
-                      <p>
-                          Cozy sphinx waves quart jug of bad milk. A
-                          very bad quack might jinx zippy fowls. Few
-                          quips galvanized the mock jury box.
-                      </p>
+
                   </div><!-- .service-icon-center end -->
               </div><!-- .col-md-3 end -->
           </div><!-- .row end -->

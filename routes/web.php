@@ -9,7 +9,10 @@
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
+
 */
+
+use App\Http\Middleware\LanguageSwitcher;
 
 Route::get('/', function () {
     return view('home');
@@ -27,6 +30,10 @@ Route::get('/contact', function () {
 
 Route::get('/gallery', function () {
     return view('gallery');
+});
+
+Route::get('/drivereyes', function () {
+    return view('drivereyes');
 });
 
 Route::get('/truck', function () {
@@ -51,10 +58,32 @@ Route::get('/train', function () {
 
 Route::get('/demand', function () {
     return view('demand');
+      App::setLocale($locale);
+});
+
+Route::get('/news', function () {
+    return view('news');
+});
+
+Route::get('/news1', function () {
+    return view('news1');
 });
 
 
 
+/*Route::get('/{locale}', function ($locale) {
+    App::setLocale($locale);
+return view('home');
+    //
+}); */
+
+Route::get('/{lang}', 'LanguagesController@set');
 
 
-Route::post('/contact/submit', 'MessagesController@submit');
+
+
+
+
+Route::post('/contact/submit', 'MessagesController@submit')->name('message.create');
+
+Route::post('/demand/submit', 'TransportController@store');

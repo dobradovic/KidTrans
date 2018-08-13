@@ -222,7 +222,7 @@ span {
 }
 p {
     padding-bottom: 15px;
-    
+
 }
 a {
     -webkit-transition: all 0.2s ease 0s;
@@ -314,6 +314,11 @@ blockquote + p {
 
 .required{
     color: #ce292d;
+
+}
+.form-error {
+
+  border: 1px solid #e74c3c;
 }
 
 .text-big{
@@ -595,6 +600,7 @@ a.download-link span i{
     position: relative;
 }
 
+
 .dropdown .dropdown-menu .dropdown-submenu > a:after{
     position: absolute;
     display: block;
@@ -607,6 +613,14 @@ a.download-link span i{
     right: 0;
     top: 50%;
     margin-top: -3px;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
 
 .dropdown-menu>li{
@@ -4045,3 +4059,30 @@ blockquote{
       color:red;
       padding-left:5px;
   }
+
+  .forma {
+    font-size: 20px;
+        padding-top: 20px;
+  }
+
+  .button-secondary {
+            background: rgb(66, 184, 221); /* this is a light blue */
+        }
+
+        .upit{
+          background:#0000000f;
+          border-radius:5px;
+        }
+
+      .posalji{
+        padding: 0 0 10px 15px;
+      }
+/* forma error */
+
+.error{
+  color:red;
+}
+
+.text-danger{
+  color:red;
+}

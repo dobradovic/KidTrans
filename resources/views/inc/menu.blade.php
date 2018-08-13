@@ -14,28 +14,38 @@
 
                               <li>
                                   <i class="fa fa-envelope"></i>
-                                  <a href="/contact">Kontakt</a>
+                                  <a href="/contact">@lang('meni.kontakt')</a>
                               </li>
                           </ul><!-- .quick links end -->
                       </div><!-- .col-md-6 end -->
 
                       <div class="col-md-6 col-xs-3">
                           <div class="wpml-languages enabled">
-                              <a class="active" href="/sr">
-                                  <img src="img/sr.png" alt="Serbian"/>
+                            @if(App::isLocale('sr'))
 
-                                  <i class="fa fa-chevron-down"></i>
-                              </a>
-
-                              <ul class="wpml-lang-dropdown">
-                                  <li>
-                                      <a href="/en">
-                                          <img src="img/en.png" alt="English"/>
+                                          <img src="img/sr.png" alt="Serbian" />
+                                          <i class="fa fa-chevron-down"></i>
                                       </a>
-                                  </li>
+                                      <ul class="wpml-lang-dropdown">
+                                          <li>
+                                              <a href={{url('/', ['locale' => 'en'])}}>
+                                                  <img src="img/en.png" alt="English"/>
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  @else
 
-
-                              </ul><!-- .wpml-lang-dropdown end -->
+                                          <img src="img/en.png" alt="English"/>
+                                          <i class="fa fa-chevron-down"></i>
+                                      </a>
+                                      <ul class="wpml-lang-dropdown">
+                                          <li>
+                                              <a href={{url('/', ['locale' => 'sr'])}}>
+                                                  <img src="img/sr.png" alt="Serbian"/>
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  @endif
                           </div><!-- .wpml-languages.enabled end -->
                       </div><!-- .col-md-6 end -->
                   </div><!-- .row end -->
@@ -55,7 +65,7 @@
                                   <!-- .navbar-header start -->
                                   <div class="navbar-header">
                                       <div class="logo">
-                                          <a href="index.html">
+                                          <a href="/">
                                             <!-- <img src="img/logokidtrans.jpg" alt="Trucking Transportation and Logistics HTML Template"/> -->
                                                       <h1> KID TRANS</h1>
                                           </a>
@@ -66,34 +76,48 @@
                                   <div class="collapse navbar-collapse">
                                       <ul class="nav navbar-nav">
                                           <li>
-                                              <a href="/">{{ __('meni.naslovna') }}</a>
+                                              <a href="/">@lang('meni.naslovna')</a>
 
                                           </li><!-- .dropdown end -->
                                           <li class="dropdown">
-                                              <a href="" data-toggle="dropdown" class="dropdown-toggle">{{ __('meni.usluge') }}</a>
+                                              <a href="" data-toggle="dropdown" class="dropdown-toggle">@lang('meni.usluge')</a>
                                               <ul class="dropdown-menu">
-                                                  <li><a href="/truck">{{ __('meni.drumksi') }}</a></li>
+                                                  <li><a href="/truck">@lang('meni.drumksi')</a></li>
 
-                                                  <li><a href="logistic">{{ __('meni.carinjenje') }}</a></li>
-                                                  <li><a href="ship">{{ __('meni.brodski') }}t</a></li>
-                                                  <li><a href="airplane">{{ __('meni.avio') }}</a></li>
-                                                  <li><a href="train">{{ __('meni.zeleznicki') }}</a></li>
+                                                  <li><a href="logistic">@lang('meni.carinjenje')</a></li>
+                                               <!-- <li><a href="ship">@lang('meni.brodski')</a></li>
+                                                  <li><a href="airplane">@lang('meni.avio')</a></li>
+                                                  <li><a href="train">@lang('meni.zeleznicki')</a></li>  -->
                                               </ul><!-- .dropdown-menu end -->
                                           </li><!-- .dropdown end -->
 
 
 
+
+
+
                                           <li>
-                                  <a href="/demand">Cene prevoza</a>
+                                  <a href="/demand">@lang('meni.cene')</a>
                                           </li>
                                           <li>
-                                  <a href="about">O nama</a>
+                                  <a href="about">@lang('meni.onama')</a>
                                           </li>
+                                          <li class="dropdown">
+                                              <a href="" data-toggle="dropdown" class="dropdown-toggle">@lang('meni.galerija')</a>
+                                              <ul class="dropdown-menu">
+                                                  <li><a href="/gallery">@lang('meni.galerija1')</a></li>
+                                                        <li><a href="/drivereyes">@lang('meni.galerija2')</a></li>
+
+
+                                              </ul><!-- .dropdown-menu end -->
+                                          </li><!-- .dropdown end -->
+
+
                                             <li>
-                                    <a href="gallery">Galerija</a>
+                                    <a href="news">@lang('meni.vesti')</a>
                                             </li>
                                             <li>
-                                    <a href="contact">Kontakt</a>
+                                    <a href="contact">@lang('meni.kontakt')</a>
                                             </li>
 
 
@@ -101,58 +125,58 @@
 
                                       <!-- RESPONSIVE MENU -->
                                       <div id="dl-menu" class="dl-menuwrapper">
-                                          <button class="dl-trigger">Open Menu</button>
+                                          <button class="dl-trigger">Open menu</button>
 
                                           <ul class="dl-menu">
 
                                             <li>
-                                                <a href="/">Početna</a>
+                                                <a href="/">@lang('meni.naslovna')</a>
 
+                                            </li><!-- .dropdown end -->
+                                            <li class="dropdown">
+                                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">@lang('meni.usluge')</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="/truck">@lang('meni.drumksi')</a></li>
+
+                                                    <li><a href="logistic">@lang('meni.carinjenje')</a></li>
+                                                 <!-- <li><a href="ship">@lang('meni.brodski')</a></li>
+                                                    <li><a href="airplane">@lang('meni.avio')</a></li>
+                                                    <li><a href="train">@lang('meni.zeleznicki')</a></li>  -->
+                                                </ul><!-- .dropdown-menu end -->
+                                            </li><!-- .dropdown end -->
+
+
+
+
+
+
+                                            <li>
+                                    <a href="/demand">@lang('meni.cene')</a>
                                             </li>
                                             <li>
-                                                  <li><a href="#">Cene prevoza</a></li>
-
-
+                                    <a href="about">@lang('meni.onama')</a>
                                             </li>
+                                            <li class="dropdown">
+                                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">@lang('meni.galerija')</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="/gallery">@lang('meni.galerija1')</a></li>
+                                                          <li><a href="/drivereyes">@lang('meni.galerija2')</a></li>
+
+
+                                                </ul><!-- .dropdown-menu end -->
+                                            </li><!-- .dropdown end -->
+
+
                                               <li>
-                                                  <a href="#">USLUGE</a>
-                                                  <ul class="dl-submenu">
-                                                      <li>
-                                                        <li><a href="services01.html">Drumski transport</a></li>
-
-                                                        <li><a href="warehousing.html">Carinjenje i logstika</a></li>
-                                                        <li><a href="supply-chain-management.html">Brodski transport</a></li>
-                                                        <li><a href="packaging-options.html">Avio transport</a></li>
-                                                        <li><a href="consulting-services.html">Železnički transport</a></li>
-
-                                                      </li>
-
-                                                  </ul><!-- dl-submenu end -->
+                                      <a href="news">@lang('meni.vesti')</a>
                                               </li>
                                               <li>
-                                                    <li><a href="#">Cene prevoza</a></li>
-
-
-                                              </li>
-                                              <li>
-                                                    <li><a href="gallery01.html">Galerija</a></li>
-
-
-                                              </li>
-                                              <li>
-                                                    <li><a href="onama.html">O nama</a></li>
-
-
-                                              </li>
-
-                                              <li>
-                                                    <li><a href="kontakt.html">Kontakt</a></li>
-
-
+                                      <a href="contact">@lang('meni.kontakt')</a>
                                               </li>
 
 
-                                          </ul><!-- .dl-menu end -->
+                                        </ul><!-- .nav.navbar-nav end -->
+
                                       </div><!-- #dl-menu end -->
 
                                       <!-- #search start -->

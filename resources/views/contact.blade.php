@@ -7,7 +7,7 @@
       <div class="container">
           <div class="row">
               <div class="col-md-12">
-                  <h1>Kontakt</h1>
+                  <h1>@lang('kontakt.naslov')</h1>
 
               </div><!-- .col-md-12 end -->
           </div><!-- .row end -->
@@ -19,24 +19,26 @@
           <div class="row">
               <div class="col-md-6">
                   <div class="custom-heading">
-                      <h3>Pošaljite nam poruku</h3>
+                      <h3>@lang('kontakt.poruka')</h3>
                   </div><!-- .custom-heading.left end -->
 
 
 
                   <br />
 
-                {!! Form::open(['url' => 'contact/submit'], ['class' => 'wpcf7 clearfix']) !!}
+                {!! Form::open(['route' => 'message.create'], ['class' => 'wpcf7 clearfix']) !!}
 
-                    {{Form::label('ime', 'Ime')}}
-                    {{Form::text('ime', '', ['class' => 'wpcf7-text', 'placeholder' => 'Ime']) }}
-                    {{Form::label('prezime', 'Prezime', false), array('class' => 'required') }}
-                    {{Form::text('prezime', '', ['class' => 'wpcf7-text', 'placeholder' => 'Prezime']) }}
-                    {{Form::label('email', 'Email',false), array('class' => 'required') }}
-                    {{Form::text('email', '', ['class' => 'wpcf7-text', 'placeholder' => 'Email']) }}
-                    {{Form::label('poruka', 'Poruka',false), array('class' => 'required') }}
-                    {{Form::textarea('poruka', '', ['class' => 'wpcf7-text', 'placeholder' => 'Poruka'] )}}
-                    {{Form::submit('Pošalji', array('class' => 'wpcf7-submit')) }}
+
+                    @lang('kontakt.ime')
+                    {{Form::text('ime', '', ['class' => 'wpcf7-text', 'placeholder' => '']) }}
+                    @lang('kontakt.prezime')
+                    {{Form::text('prezime', '', ['class' => 'wpcf7-text', 'placeholder' => '']) }}
+                    @lang('kontakt.email')
+                    {{Form::text('email', '', ['class' => 'wpcf7-text', 'placeholder' => '']) }}
+                    @lang('kontakt.poruka')
+                    {{Form::textarea('poruka', '', ['class' => 'wpcf7-text', 'placeholder' => ''] )}}
+                    {{Form::submit(Lang::get('kontakt.posalji'), array('class' => 'wpcf7-submit')) }}
+
 
                 {!! Form::close() !!}
 
@@ -63,18 +65,17 @@
 
               <div class="col-md-6">
                   <div class="custom-heading">
-                      <h3>Lokacija</h3>
+                      <h3>@lang('kontakt.lokacija')</h3>
                   </div><!-- .custom-heading end -->
 
                   <div id="map"></div>
 
                   <div class="custom-heading">
-                      <h4>Informacije o kompaniji</h4>
+                      <h4>@lang('kontakt.info')</h4>
                   </div><!-- .custom-heading end -->
 
                   <address>
-                      Ulica 18<br />
-                      Beograd
+                    @lang('kontakt.adresa')
                   </address>
 
                   <span class="text-big colored">
@@ -82,7 +83,7 @@
                   </span>
                   <br />
 
-                  <a href="mailto:">info@trucking.com</a>
+                  <a href="mailto:">office@kidtrans.com</a>
               </div><!-- .col-md-6 end -->
           </div><!-- .row end -->
       </div><!-- .container end -->

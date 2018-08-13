@@ -30,7 +30,7 @@
                      data-hide-effect="fade"
                      data-delay="300"
                      >
-                     strongest
+                    Vaš parnter
                  </h2>
 
                  <h2 class="ms-layer pi-caption01"
@@ -41,7 +41,7 @@
                      data-hide-effect="fade"
                      data-delay="600"
                      >
-                     distribution
+                     U volumenskom
                  </h2>
 
                  <h2 class="ms-layer pi-caption01"
@@ -52,7 +52,7 @@
                      data-hide-effect="fade"
                      data-delay="900"
                      >
-                     network
+                     Prevozu
                  </h2>
              </div><!-- .ms-slide end -->
 
@@ -163,7 +163,7 @@
                     data-hide-effect="fade"
                     data-delay="600"
                     >
-                     Powerful Transport & Logistics Web Solution
+                    
                  </p>
              </div><!-- .ms-slide slide04 end -->
          </div><!-- #masterslider end -->
@@ -174,38 +174,11 @@
                      <div class="col-md-4 col-sm-4">
                          <div class="service-feature-box">
                              <div class="service-media">
-                                 <img src="img/pics/put.jpg" alt="Trucking"/>
-
-                                 <a href="/demand" class="read-more02">
-                                     <span>
-                                        PoŠalji upit
-                                         <i class="fa fa-chevron-right"></i>
-                                     </span>
-                                 </a>
-                             </div><!-- .service-media end -->
-
-                             <div class="service-body">
-                                 <div class="custom-heading">
-                                     <h4>UPIT ZA TROŠKOVE TRANSPORTA</h4>
-                                 </div><!-- .custom-heading end -->
-
-                                 <p>
-
- Želite da znate koliko košta transport kod firme Kid Trans?
-                                 </p>
-
-                             </div><!-- .service-body end -->
-                         </div><!-- .service-feature-box-end -->
-                     </div><!-- .col-md-4 end -->
-
-                     <div class="col-md-4 col-sm-4">
-                         <div class="service-feature-box">
-                             <div class="service-media">
                                  <img src="img/pics/transport1.jpg" alt="Trucking"/>
 
-                                 <a href="/truck" class="read-more02">
+                                 <a href="/gallery" class="read-more02">
                                      <span>
-                                        Saznaj više
+                                  Saznaj više
                                          <i class="fa fa-chevron-right"></i>
                                      </span>
                                  </a>
@@ -213,12 +186,14 @@
 
                              <div class="service-body">
                                  <div class="custom-heading">
-                                     <h4>Moderna flota kamiona</h4>
+                                     <h4>@lang('pocetna.box1naslov')</h4>
                                  </div><!-- .custom-heading end -->
 
                                  <p>
-                                     Naša osnovna delatnost je drumski prevoz. Visok nivo usluge u ovoj oblasti, uz dugogodišnje iskustvo, omogućuje i najmodernija flota kamiona
+
+    @lang('pocetna.box1tekst')
                                  </p>
+
                              </div><!-- .service-body end -->
                          </div><!-- .service-feature-box-end -->
                      </div><!-- .col-md-4 end -->
@@ -230,6 +205,31 @@
 
                                  <a href="/about" class="read-more02">
                                      <span>
+                                        Saznaj više
+                                         <i class="fa fa-chevron-right"></i>
+                                     </span>
+                                 </a>
+                             </div><!-- .service-media end -->
+
+                             <div class="service-body">
+                                 <div class="custom-heading">
+                                     <h4>   @lang('pocetna.box2naslov')</h4>
+                                 </div><!-- .custom-heading end -->
+
+                                 <p>
+                                      @lang('pocetna.box2tekst')
+                                 </p>
+                             </div><!-- .service-body end -->
+                         </div><!-- .service-feature-box-end -->
+                     </div><!-- .col-md-4 end -->
+
+                     <div class="col-md-4 col-sm-4">
+                         <div class="service-feature-box">
+                             <div class="service-media">
+                                 <img src="img/pics/put.jpg" alt="Trucking"/>
+
+                                 <a href="/news" class="read-more02">
+                                     <span>
                                       Saznaj više
                                          <i class="fa fa-chevron-right"></i>
                                      </span>
@@ -238,11 +238,12 @@
 
                              <div class="service-body">
                                  <div class="custom-heading">
-                                     <h4>Visok kvalitet usluga</h4>
+                                     <h4> @lang('pocetna.box3naslov')</h4>
                                  </div><!-- .custom-heading end -->
 
                                  <p>
-                                    Naša vizija je da postanemo poželjan partner, poznat po visokom nivou kvaliteta usluga i negovanim odnosima sa našim partnerima i klijentima.
+                                @lang('pocetna.box3tekst')
+
                                  </p>
                              </div><!-- .service-body end -->
                          </div><!-- .service-feature-box-end -->
@@ -251,10 +252,9 @@
 
                  <div class="row">
                      <div class="col-md-12">
-                         <a href="#" class="btn btn-big btn-yellow btn-centered">
+                         <a href="/demand" class="btn btn-big btn-yellow btn-centered">
                              <span>
-                                pošalji upit za troškove transporta
-                             </span>
+                                @lang('pocetna.upit')
                          </a>
                      </div><!-- .col-md-12 end -->
                  </div><!-- .row end -->
@@ -266,7 +266,7 @@
                  <div class="row">
                      <div class="col-md-12">
                          <div class="custom-heading02">
-                             <h2>Usluge koje nudimo</h2>
+                             <h2>  @lang('pocetna.uslugekojenudimo')</h2>
                              <p>
 
                              </p>
@@ -282,36 +282,34 @@
                              </div><!-- .icon-container end -->
 
                              <div class="service-details">
-                                 <h3>Drumski transport</h3>
+                                 <h3>@lang('pocetna.drumskit')</h3>
 
                                  <p>
-                                     Need custom logistic service? We got it
-                                     covered. From overland, air, rail and sea
-                                     transportation. Fast, safe and accurate
-                                     shipment provided all over the globe.
+                                   @lang('pocetna.drumskitopis')
                                  </p>
                              </div><!-- .service-details end -->
                          </div><!-- .service-icon-left-boxed end -->
+
+
                      </div><!-- .col-md-6 end -->
 
                      <div class="col-md-6 col-sm-6">
                          <div class="service-icon-left-boxed">
                              <div class="icon-container animated triggerAnimation" data-animate="zoomIn">
-                                 <img src="img/svg/pi-globe-5.svg" alt="globe icon"/>
+                                 <img src="img/svg/pi-warehouse-1.svg" alt="touch icon"/>
                              </div><!-- .icon-container end -->
 
                              <div class="service-details">
-                                 <h3>Avio transport</h3>
+                                 <h3>@lang('pocetna.sil')</h3>
 
                                  <p>
-                                     Trucking company offers the best logistics
-                                     services using all mens of supply chain. Use
-                                     our overland, ocean and air freight solutions
-                                     for shipment of your goods.
+                                  @lang('pocetna.silt')
                                  </p>
                              </div><!-- .service-details end -->
                          </div><!-- .service-icon-left-boxed end -->
                      </div><!-- .col-md-6 end -->
+
+
                  </div><!-- .row.mb-30 end -->
 
                  <div class="row">
@@ -322,17 +320,16 @@
                              </div><!-- .icon-container end -->
 
                              <div class="service-details">
-                                 <h3>Brodski transport</h3>
+                                 <h3>@lang('pocetna.brodskit')</h3>
 
                                  <p>
-                                     Trucking offers intelligent warehouse solution.
-                                     Lower your storage and good maintenance by
-                                     using our modern and intelligent warehouses.
-                                     You can see all locations on location page.
+                                  @lang('pocetna.brodskitopis')
                                  </p>
                              </div><!-- .service-details end -->
                          </div><!-- .service-icon-left-boxed end -->
                      </div><!-- .col-md-6 end -->
+
+
 
                      <div class="col-md-6 col-sm-6">
                          <div class="service-icon-left-boxed">
@@ -341,27 +338,120 @@
                              </div><!-- .icon-container end -->
 
                              <div class="service-details">
-                                 <h3>Železnički transport</h3>
+                                 <h3>@lang('pocetna.zeleznickit')</h3>
 
                                  <p>
-                                     Don't know what mean of transportation
-                                     would be right for you, or you need someone
-                                     for full supply chain management? Please contact
-                                     us. Our team of professionals will be happy to help.
+                                     @lang('pocetna.zeleznickitopis')
                                  </p>
                              </div><!-- .service-details end -->
                          </div><!-- .service-icon-left-boxed end -->
                      </div><!-- .col-md-6 end -->
+
+                     <div class="col-md-12 col-sm-6">
+                         <div class="service-icon-left-boxed avio">
+                             <div class="icon-container animated triggerAnimation" data-animate="zoomIn">
+                                 <img src="img/svg/pi-globe-5.svg" alt="globe icon"/>
+                             </div><!-- .icon-container end -->
+
+                             <div class="service-details">
+                                 <h3>@lang('pocetna.aviot')</h3>
+
+                                 <p>
+                                @lang('pocetna.aviotopis')
+                                 </p>
+                             </div><!-- .service-details end -->
+                         </div><!-- .service-icon-left-boxed end -->
+                     </div><!-- .col-md-6 end -->
+
+
+                     <div class="col-md-12 col-sm-8">
+                  <div class="custom-heading">
+                      <h3>what clients say</h3>
+                  </div><!-- .custom-heading end -->
+
+                  <div class="carousel-container">
+                      <div id="testimonial-carousel" class="owl-carousel owl-carousel-navigation">
+                          <div class="owl-item">
+                              <div class="testimonial">
+                                  <p>
+                                      Best customer support and
+                                      response time I have ever seen...
+                                      not to mention a kick ass theme!
+                                      Great feeling from this purchase.
+                                      Thank you Pixel Industry!
+                                  </p>
+
+                                  <div class="testimonial-author">
+                                      <p>
+                                          TRAVIS COPLAND, <br />
+                                          Transport & Logistics Solutions
+                                      </p>
+                                  </div><!-- .testimonial-author end -->
+                              </div><!-- .testimonial end -->
+                          </div><!-- .owl-item end -->
+
+                          <div class="owl-item">
+                              <div class="testimonial">
+                                  <p>
+                                      Thanks for developing
+                                      products to help many people
+                                      to work as I do. Thank you!
+                                      Success for all! I did not
+                                      need to use the support,
+                                      this never happened to me.
+                                      Pocket Theme bought today
+                                      for another client, very
+                                      good too! Hug!
+                                  </p>
+
+                                  <div class="testimonial-author">
+                                      <p>
+                                          ADRIANOSP, <br />
+                                          Themeforest member
+                                      </p>
+                                  </div><!-- .testimonial-author end -->
+                              </div><!-- .testimonial end -->
+                          </div><!-- .owl-item end -->
+
+                          <div class="owl-item">
+                              <div class="testimonial">
+                                  <p>
+                                      We have several sites now
+                                      built in Elvyre across
+                                      several servers and have had
+                                      almost zero issues. The
+                                      documentation is great and
+                                      the featureset is phenomenal.
+                                      It is the best looking
+                                      pro-level and fairly easy-to-implement
+                                      advanced theme we are currently
+                                      regularly using. The end product
+                                      is great and easy to use and
+                                      configure. Highly recommended...
+                                  </p>
+
+                                  <div class="testimonial-author">
+                                      <p>
+                                          DIGITALMARKETINGASSOCIATES, <br />
+                                          Themeforest member
+                                      </p>
+                                  </div><!-- .testimonial-author end -->
+                              </div><!-- .testimonial end -->
+                          </div><!-- .owl-item end -->
+                      </div><!-- #testimonial-carousel end -->
+                  </div><!-- .carousel-container end -->
+              </div><!-- .col-md-4 end -->
                  </div><!-- .row.mb-30 end -->
              </div><!-- .container end -->
          </div><!-- .page-content end -->
+
 
          <div class="page-content custom-bkg bkg-dark-blue column-img-bkg dark mb-70">
              <div class="container-fluid">
                  <div class="row">
                      <div class="col-md-4 col-md-offset-2 custom-col-padding-both">
                          <div class="custom-heading">
-                             <h3>Zašto KID TRANS?</h3>
+                             <h3>@lang('pocetna.zkidtrans')</h3>
                          </div><!-- .custom-heading end -->
 
                          <p>
@@ -375,7 +465,7 @@
                                  </div><!-- .icon-container end -->
 
                                  <p>
-                                    Zakoračite u svet pouzdanog transporta
+                                  @lang('pocetna.zkidtrans1')
                                  </p>
                              </li>
 
@@ -385,7 +475,7 @@
                                  </div><!-- .icon-container end -->
 
                                  <p>
-                                    Snažna logistika
+                                  @lang('pocetna.zkidtrans2')
                                  </p>
                              </li>
 
@@ -395,7 +485,7 @@
                                  </div><!-- .icon-container end -->
 
                                  <p>
-                                     Visok kvalitet usluga
+                                    @lang('pocetna.zkidtrans3')
                                  </p>
                              </li>
 
@@ -405,7 +495,7 @@
                                  </div><!-- .icon-container end -->
 
                                  <p>
-                                    Moderna flota kamiona
+                                @lang('pocetna.zkidtrans4')
                                  </p>
                              </li>
 
@@ -415,12 +505,14 @@
 
                      <div class="col-md-6 img-bkg01">
                          <div>
- 					<img src="img/pics/t.png" data-src="" alt="Strongest distribution network"/>
+ 					<img src="img/pics/kid4.jpg" data-src="" alt="Strongest distribution network"/>
  						</div>
                      </div>
                  </div><!-- .row end -->
              </div><!-- .container end -->
          </div><!-- .page-content.bkg-dark-blue end -->
+
+
 
 
 
